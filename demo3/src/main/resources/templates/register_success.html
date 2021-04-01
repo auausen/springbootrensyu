@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登録完了</title>
+    <style type="text/css">
+        span{
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+    <h1>登録完了</h1>
+    <span>名前：</span><span th:text="${user.name}">${user.name}</span>
+    <span>メール：</span><span th:text="${user.email}">${user.email}</span>
+    </form>
+</div>
+
+</body>
+</html>
