@@ -17,7 +17,7 @@
         <tr>
             <th>PC名</th>
             <th>名前</th>
-            <th>更新</th>
+            <th>更新・削除</th>
         </tr>
         </thead>
         <tbody>
@@ -27,6 +27,9 @@
             <td>
                 <a th:href="@{/showFormforUpdate/{id}(id=${pc.id})}" class="btn btn-primary">
                     更新
+                </a>
+                <a th:href="@{/deletePc/{id}(id=${pc.id})}" class="btn btn-danger">
+                    削除
                 </a>
             </td>
         </tr>

@@ -35,4 +35,9 @@ public class PcServiceImpl implements PcService {
         }
         return pc;
     }
+
+    @Override
+    public void deletePcById(long id) {
+        this.pcRepository.deleteById(id);
+    }
 }

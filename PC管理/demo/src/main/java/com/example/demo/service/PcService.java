@@ -8,4 +8,5 @@ public interface PcService {
     List<Pc> getAllpcs();
     void savePc(Pc pc);
     Pc getPcById(long id);
+    void deletePcById(long id);
 }

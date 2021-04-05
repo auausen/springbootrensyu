@@ -44,4 +44,13 @@ public class PcController {
         model.addAttribute("pc", pc);
         return "update_pc";
     }
+
+    @GetMapping("/deletePc/{id}")
+    public String deletePc(@PathVariable (value = "id") long id){
+        //PC削除
+        this.pcService.deletePcById(id);
+        return "redirect:/";
+    }
+
+
 }
