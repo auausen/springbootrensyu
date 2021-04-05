@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>PC管理システム</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>PC管理システム更新</h1>
+    <hr>
+    <h2>更新</h2>
+
+    <form th:action="@{/savePc}" th:object="${pc}" method="POST">
+        <!--        idは隠す-->
+        <input type="hidden" th:field="*{id}"/>
+
+        <input type="text" th:field="*{pcname}" class="form-control mb-4 col-4">
+
+        <input type="text" th:field="*{name}" class="form-control mb-4 col-4">
+
+        <button type="submit" class="btn btn-info col-2">
+            PCを保存
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
