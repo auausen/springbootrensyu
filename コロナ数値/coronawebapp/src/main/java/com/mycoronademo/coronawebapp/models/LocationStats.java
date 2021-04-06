@@ -22,7 +22,7 @@ public class LocationStats {
         this.country = country;
     }
 
-    public int getLatestTotalCases() {
+    public int getLatestTotalCases(int i) {
         return latestTotalCases;
     }
 
@@ -30,6 +30,12 @@ public class LocationStats {
         this.latestTotalCases = latestTotalCases;
     }
 
-    public void getLatestTotalCases(int parseInt) {
+    @Override
+    public String toString() {
+        return "LocationStats{" +
+                "state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                ", latestTotalCases=" + latestTotalCases +
+                '}';
     }
 }
